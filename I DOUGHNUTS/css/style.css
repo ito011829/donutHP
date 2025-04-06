@@ -349,3 +349,31 @@ footer {
   margin: auto;
 }
 
+/*--------------- menu-table ---------------*/
+#menu-table {
+  margin: auto 80px;
+  padding-bottom: 40px;
+}
+
+.menu-title {
+  border-bottom: 2px dotted #2F525E;
+  margin-bottom: 50px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.menu-list li {
+  list-style-type: none;
+  width: 20%;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.menu-list li a {
+  color: #222;
+  text-decoration: none;
+}
