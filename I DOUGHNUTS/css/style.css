@@ -11,6 +11,20 @@ body {
   color: #222;
 }
 
+/*--------------- ページ内リンク調整　 ---------------*/
+section::before {
+  content: '';
+  display: block;
+  padding-top: 120px;
+  margin-top: -120px;
+}
+
+section h2::before {
+  content: '';
+  display: block;
+  padding-top: 120px;
+  margin-top: -120px;
+}
 /*--------------- page-title 汎用h1--------------- */
 .page-title-main {
   font-family: "Boldonse", system-ui;
@@ -104,12 +118,12 @@ body {
 }
 
 .p-dreadcrumbs-2nd a {
-  color: #F0EEE9;
+  color: #999;
   text-decoration: none;
 }
 
 .p-dreadcrumbs-2nd a:hover {
-  color: #222;
+  color: #F0EEE9;
 }
 
 .p-dreadcrumbs-2nd li:not(:last-child):after {
@@ -117,11 +131,19 @@ body {
   content: "";
   width: .7rem;
   height: .7rem;
-  border-top: 1px solid currentColor;
-  border-right: 1px solid currentColor;
+  border-top: 1px solid #F0EEE9;
+  border-right: 1px solid #F0EEE9;
   box-sizing: border-box;
   rotate: 45deg;
   margin-left: 1rem;
+}
+
+#subpage .subpage-main-c_var a:hover {
+  color: #222;
+}
+
+.subpage-main-c_var li:last-child {
+  color: #F0EEE9;
 }
 
 /*--------------- header ---------------*/
@@ -203,7 +225,7 @@ nav li {
   justify-content: space-between;
   font-size: 21px;
   font-weight: bold;
-  /* margin: 0 auto 80px auto; */
+  padding: 20px 0;
 }
 
 .menu-name {
@@ -214,6 +236,15 @@ nav li {
 .price {
   text-align: right;
   margin: 0;
+}
+
+.menu-column {
+  padding: 0 10px;
+}
+
+.menu-column img {
+  border: 2px solid #222;
+  border-radius: 4px;
 }
 
 /*------------------ 汎用 view more btn--------------- */
@@ -293,9 +324,9 @@ nav li {
 
 .about-inner {
   text-align: center;
-  padding: 80px 0;
   max-width: 550px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .about-img {
@@ -304,6 +335,10 @@ nav li {
 
 .about-inner p {
   padding: 10px 0;
+}
+
+.about-inner .description {
+  text-align: left;
 }
 
 /*--------------- news&blog ---------------*/
@@ -341,7 +376,7 @@ dl a {
 footer {
   background-color: #2F525E;
   text-align: center;
-  padding: 80px 80px 40px 80px;
+  padding: 80px 80px 20px 80px;
 } 
 
 .footer-body a {
@@ -351,13 +386,28 @@ footer {
 
 .copy {
   color: #F0EEE9;
+  padding-top: 50px;
 }
 
-.faq-btn {
+.faq-btn-box {
   display: flex;
-  text-align: left;
+  justify-content: space-between;
+}
+
+.faq-btn-box a {
+  font-size: 21px;
   text-decoration: none;
   color: #F0EEE9;
+  background-color: #2F525E;
+  border: 2px solid #F0EEE9;
+  padding: 5px 20px;
+  border-radius: 4px;
+}
+
+.faq-btn-box a:hover {
+  background-color: #F0EEE9;
+  color: #2F525E;
+  transition: 0.3s;
 }
 
 /*--------------------------------------------- 
@@ -459,10 +509,6 @@ footer {
   margin: auto;
 }
 
-#subpage .subpage-main-c_var a:hover {
-  color: #222;
-}
-
 /*---------------汎用arrow btn ← ---------------*/
 .arrow-btn-back {
   text-decoration: none;
@@ -522,8 +568,12 @@ footer {
   width: 20%;
   text-align: center;
   background-color: #D7BA9B;
+  border: 2px solid #222;
+  border-radius: 4px;
   padding: 20px;
   margin: 5px;
+  position: relative;
+  padding-bottom: 100px;
 }
 
 .menu-list li a {
@@ -537,10 +587,42 @@ footer {
 
 .item-name {
   font-weight: bold;
+  height: 2rem;
 }
 
 .item-price {
   font-weight: bold;
+}
+
+.item-lead {
+  text-align: left;
+}
+
+.more-btn-menu {
+  text-align: center;
+  background-color: #2F525E;
+  box-shadow: 0 4px 0 #1b2c31;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  position: absolute;
+  bottom: 40px;
+  margin: 0 20px;
+  left: 0;
+  right: 0;
+}
+
+.more-btn-menu:hover {
+  transform: translateY(4px);
+  box-shadow: none;
+}
+
+.more-btn-menu span {
+  color: #F0EEE9;
+}
+
+.img-box img {
+  border-radius: 8px;
 }
 
 /*--------------------------------------------- 
@@ -619,6 +701,7 @@ footer {
 .menu-carousel a {
   color: #222;
   text-decoration: none;
+  padding: 0 10px;
 }
 
 .menu-carousel p {
@@ -646,7 +729,7 @@ footer {
   text-align: center;
   max-width: 700px;
   margin: 20px auto;
-  padding: 10px;
+  padding: 0 0 150px 0;
 }
 
 /* passion */
@@ -671,6 +754,7 @@ footer {
 
 .passion-inner {
   max-width: 550px;
+  padding: 0 20px;
 }
 
 .passion-img img {
@@ -697,6 +781,7 @@ footer {
 
 .customer-inner {
   max-width: 1100px;
+  padding: 0 20px;
 }
 
 .customer-inner h2 {
@@ -885,6 +970,22 @@ footer {
   margin: 40px;
 }
 
+.whatsnew-box a {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
+  background-color: white;
+  margin: 40px 200px;
+  padding: 20px 0;
+  align-items: center;
+  text-decoration: none;
+}
+
+.whatsnew-box a:hover {
+  box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+  transform: scale(0.985);
+  transition: 0.3s;
+}
 
 .whatsnew-cat {
   background-color: #2F525E;
@@ -896,21 +997,14 @@ footer {
   border-radius: 4px;
 }
 
-.whatsnew-box {
-  display: flex;
-  text-align: left;
-  background-color: white;
-  margin: 40px 100px;
-  padding: 20px 0;
-  align-items: center;
-}
-
 .whatsnew-inner {
   max-width: 1100px;
+  padding: 0 20px;
 }
 
 .whatsnew-inner h2 {
   margin: 0 0 10px 0;
+  color: #222;
 }
 
 .whatsnew-inner .lead {
@@ -921,6 +1015,7 @@ footer {
 
 .whatsnew-inner .description {
   background-color: #D7BA9B;
+  color: #222;
   border-radius: 4px;
   padding: 5px;
   margin: 0 auto;
@@ -929,56 +1024,8 @@ footer {
 }
 
 .whatsnew-img img {
-  padding: 0 50px;
+  padding: 0 10px;
   align-items: center;
-}
-
-/* arrow-btn Whatsnew  */
-.link-btn {
-  margin: 0 auto;
-}
-
-.arrow-btn-whatsnew {
-  text-decoration: none;
-  color: #222;
-  font-weight: bold;
-  position: relative;
-  display: inline-block;
-  padding-left: 30px;
-  transition-property: opacity;
-  transition-duration: 0.2s;
-}
-
-.arrow-btn-whatsnew:hover {
-  opacity: 0.7;
-}
-
-.arrow-btn-whatsnew:before {
-  content: '';
-  width: 50px;
-  height: 50px;
-  background: #2F525E;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.arrow-btn-whatsnew:after {
-  content: '';
-  width: 15px;
-  height: 15px;
-  border: 0;
-  border-top: solid 2px #F0EEE9;
-  border-right: solid 2px #F0EEE9;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 0;
-  left: 13px;
-  bottom: 0;
-  margin: auto;
 }
 
 /* pagination */
@@ -1140,4 +1187,53 @@ footer {
 
 .share a:hover {
   opacity: 0.5;
+}
+
+
+/*--------------------------------------------- 
+-----------------レスポンシブ ---------------
+---------------------------------------------*/
+
+/*--------------- 1100px以下 ---------------*/
+@media screen and (max-width: 1100px) {
+  /* .header-inner a {
+    font-size: 80%;
+  }
+
+  #nav-pc {
+    display: none;
+  }
+
+  #menu-sp {
+    display: block;
+    background-color: transparent;
+    float: right;
+    padding: 0;
+    border: none;
+  }
+
+  #nav-sp {
+    background-color: #2F525E;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+  }
+
+  #nav-sp nav ul {
+    padding-left: 0;
+  } */
+
+
 }
