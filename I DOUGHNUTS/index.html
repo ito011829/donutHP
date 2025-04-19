@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 </head>
-  <body>
+  <body id="top">
 
     <!-- header -->
     <header>
@@ -23,8 +23,8 @@
           <a href="index.html">I DOUGHNUTS</a>
         </h1>
 
-        <!-- navigation -->
-         <nav>
+        <!-- PC navigation -->
+         <nav id="nav-pc">
           <ul class="navi">
             <li><a href="menu.html" class="navi-menu">MENU</a></li>
             <li><a href="about.html" class="navi-about">ABOUT</a></li>
@@ -33,6 +33,66 @@
             <li><a href="nwes&blog.html" class="navi-news&blog">NEWS&BLOG</a></li>
           </ul>
          </nav>
+
+        <!-- SP navigation btn -->
+          <!-- <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
+            <img src="images/menu-btn.png" alt="ハンバーガーメニュー開く">
+          </button> -->
+
+        <!-- SP navigation -->
+          <!-- <div id="nav-sp">
+            <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
+              <img src="images/close-btn.png" alt="ハンバーガーメニュー閉じる">
+            </button>
+
+            <nav>
+              <ul>
+                <li>
+                  <h1 class="shop-name">
+                    <a href="index.html">I DOUGHNUTS</a>
+                  </h1>
+                </li>
+                <li><a class="nav-sp-menu" href="menu.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MENU</a></li>
+                <li><a class="nav-sp-menu" href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a></li>
+                <li><a class="nav-sp-menu" href="access.html" onclick="document.getElementById('nav-sp').style.display = 'none'">ACCESS</a></li>
+                <li><a class="nav-sp-menu" href="contact.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
+                <li><a class="nav-sp-menu" href="nwes&blog.html" onclick="document.getElementById('nav-sp').style.display = 'none'">NEWS&BLOG</a></li>
+              </ul>
+            </nav>
+            <div class="fotter-inner">
+              <div class="fotter-addr">
+                <p class="description">
+                  <a href="#">
+                    <span>〒XXX-XXXX<br>岡山県岡山市岡山X-X</span>
+                    <span><img src="images/map.png" alt="mapのicon"></span>
+                  </a>
+                </p>
+              </div>
+              <div class="footer-tel">
+                <p class="description">
+                  <a href="">
+                    <span>TEL XXX-XXXX-XXXX</span>
+                    <span><img src="images/tel.png" alt="phoneのicon"></span>
+                  </a>
+                </p>
+              </div>
+              <div class="footer-mail">
+                <p class="description">
+                  <a href="">
+                    <span>お問い合わせはコチラ</span>
+                    <span><img src="images/mail.png" alt="mailのicon"></span>
+                  </a>
+                </p>
+              </div>
+              <div class="sns-btn">
+                <a href="https://x.com/"><img src="images/x.png" alt="Xのリンク"></a>
+                <a href="https://www.instagram.com/"><img src="images/insta.png" alt="instaのリンク"></a>
+              </div>
+            </div>
+
+            <p class="copy">&copy; I DOUGHNUTS.</p>
+
+          </div> -->
       </div>
     </header>
 
@@ -89,7 +149,7 @@
               </div>
           </div>
           <div class="more-btn">
-            <a href="#menu"><span>View More</span></a>
+            <a href="menu.html"><span>View More</span></a>
           </div>
         </section>
 
@@ -107,7 +167,7 @@
                 私たちのこだわりが詰まったドーナツの背景や、作り手の思いをもっと知っていただければ嬉しいです。
                 ぜひ、「I DOUGHNUTS」のストーリーをご覧ください。</p>
             <div class="more-btn">
-                <a href="#menu"><span>View More</span></a>
+                <a href="about.html"><span>View More</span></a>
             </div>
           </div>
          </section>
@@ -120,28 +180,28 @@
                   <h2 class="title">NEWS</h2>
                     <dl class="news">
                       <dt>2025.04.01</dt>
-                      <dd><a href="">新フレーバー「シナモンシュガードーナツ」登場！</a></dd>
+                      <dd><a href="news&blog_detail.html">「I DOUGHNUTS」ついにオープン！</a></dd>
                       <dt>2025.04.01</dt>
-                      <dd><a href="">春限定ドリンク「桜ラテ」販売中</a></dd>
+                      <dd><a href="news&blog_detail.html">春限定ドリンク「桜ラテ」販売中</a></dd>
                       <dt>2025.04.01</dt>
-                      <dd><a href="">大切な日にぴったり！ケーキ型ドーナツの注文受付開始</a></dd>
+                      <dd><a href="news&blog_detail.html">新フレーバー「シナモンシュガードーナツ」登場！</a></dd>
                     </dl>
                     <div class="more-btn">
-                      <a href="#menu"><span>View More</span></a>
+                      <a href="nwes&blog.html"><span>View More</span></a>
                     </div>
                 </div>
                 <div class="column">
                   <h2 class="title">BLOG</h2>
                   <dl class="blog">
                     <dt>2025.04.01</dt>
-                    <dd><a href="">ドーナツ作りへのこだわり</a></dd>
+                    <dd><a href="news&blog_detail_blog.html">ドーナツ作りへのこだわり</a></dd>
                     <dt>2025.04.01</dt>
-                    <dd><a href="">ドーナツとコーヒーの相性を楽しむ</a></dd>
+                    <dd><a href="news&blog_detail_blog.html">ドーナツとコーヒーの相性を楽しむ</a></dd>
                     <dt>2025.04.01</dt>
-                    <dd><a href="">「I DOUGHNUTS」のドーナツが生まれるまで</a></dd>
+                    <dd><a href="news&blog_detail_blog.html">「I DOUGHNUTS」のドーナツが生まれるまで</a></dd>
                   </dl>
                   <div class="more-btn">
-                    <a href="#menu"><span>View More</span></a>
+                    <a href="nwes&blog_blog.html"><span>View More</span></a>
                   </div>
                 </div>
               </div>
@@ -183,13 +243,16 @@
             </p>
           </div>
           <div class="sns-btn">
-            <a href=""><img src="images/x.png" alt="Xのリンク"></a>
-            <a href=""><img src="images/insta.png" alt="instaのリンク"></a>
+            <a href="https://x.com/"><img src="images/x.png" alt="Xのリンク"></a>
+            <a href="https://www.instagram.com/"><img src="images/insta.png" alt="instaのリンク"></a>
           </div>
         </div>
       </div>
 
-      <a href="#faq" class="faq-btn"><span>FAQ</span></a>
+      <div class="faq-btn-box">
+        <a href="contact.html" class="faq-btn"><span>FAQ</span></a>
+        <a href="#top" class="top-btn"><span>TOP</span></a>
+      </div>
       
       <p class="copy">&copy; I DOUGHNUTS. All rights reserved.</p>
 
