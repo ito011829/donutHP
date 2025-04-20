@@ -1194,46 +1194,57 @@ footer {
 -----------------レスポンシブ ---------------
 ---------------------------------------------*/
 
-/*--------------- 1100px以下 ---------------*/
-@media screen and (max-width: 1100px) {
-  /* .header-inner a {
-    font-size: 80%;
-  }
+/*--------------- 767px以下 ---------------*/
+@media screen and (max-width: 767px) {
+#header-inner a {
+  font-size: 80%;
+}
 
-  #nav-pc {
-    display: none;
-  }
+#nav-pc {
+  display: none;
+}
 
-  #menu-sp {
-    display: block;
-    background-color: transparent;
-    float: right;
-    padding: 0;
-    border: none;
-  }
+#menu-sp {
+  display: block;
+  background-color: transparent;
+  float: right;
+  padding: 0;
+  border: none;
+}
 
-  #nav-sp {
-    background-color: #2F525E;
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    display: none;
-    z-index: 100;
-  }
+#nav-sp {
+  background-color: #2F525E;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  z-index: 100;
+}
 
-  #close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-  }
+#close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+}
 
-  #nav-sp nav ul {
-    padding-left: 0;
-  } */
+#nav-sp nav ul {
+  padding-left: 0;
+}
 
+.col-2 {
+  grid-template-columns: 1fr;
+}
+
+.header-inner h1 {
+  font-size: 1.6em;
+}
+
+#menu-sp img {
+  padding-right: 40px;
+}
 
 }
