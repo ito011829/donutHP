@@ -331,6 +331,7 @@ nav li {
 
 .about-img {
   width: 100%;
+  box-shadow:5px 5px 10px #b2b2b2;
 }
 
 .about-inner p {
@@ -1194,16 +1195,136 @@ footer {
 -----------------レスポンシブ ---------------
 ---------------------------------------------*/
 
-/*--------------- 767px以下 ---------------*/
-@media screen and (max-width: 767px) {
-#header-inner a {
-  font-size: 80%;
+/* pc 表示・非表示　汎用 */
+
+#menu-sp {
+  display: none;
 }
+
+#nav-sp {
+  display: none;
+}
+
+.img-sp {
+  display: none;
+}
+
+.menu-sp-show {
+  display: none;
+}
+
+.back-btn-sp {
+  display: none;
+}
+
+.br-sp {
+  display: none;
+}
+
+/*--------------------------------------------- 
+-----------------タブレット用---------------
+---------------------------------------------*/
+
+/*--------------- 1280px以下 ---------------*/
+@media screen and (max-width: 1280px) {
+.header-inner {
+  flex-direction: column;
+}
+
+.img-pc {
+  width: 100%;
+}
+
+/* header */
+.header-inner h1 {
+  padding-left: 0px;
+  margin: 0px;
+}
+
+/* main visual */
+.carousel img {
+  padding-top: 70px;
+}
+
+#concept {
+  margin: 110px auto;
+}
+
+.p-dreadcrumbs {
+  top: 10rem;
+}
+
+.p-dreadcrumbs-2nd {
+  top: 10rem;
+}
+
+}
+
+/*--------------------------------------------- 
+-----------------スマホ用---------------
+---------------------------------------------*/
+
+/*--------------- 768px以下 ---------------*/
+@media screen and (max-width: 768px) {
+.header-inner {
+  flex-direction: row;
+}
+
+/*--------------- sp 表示・非表示 　余白  汎用 ---------------*/
 
 #nav-pc {
   display: none;
 }
 
+.sp-none {
+  display: none;
+}
+
+.img-pc {
+  display: none;
+}
+
+.img-sp {
+  display: block;
+  width: 100%;
+  box-shadow:5px 5px 10px #b2b2b2;
+}
+
+.back-btn-sp {
+  display: block;
+  text-align: center;
+}
+
+.br-sp {
+  display: block;
+}
+
+/* パンくず */
+.p-dreadcrumbs {
+  display: none
+}
+
+.p-dreadcrumbs-2nd {
+  display: none
+}
+
+/* main */
+.subpage-main {
+  padding: 100px 0;
+}
+
+.subpage-main-c_var {
+  padding: 100px 0;
+}
+
+.skip-btn {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
+
+/* ---------------hamburger --------------- */
 #menu-sp {
   display: block;
   background-color: transparent;
@@ -1225,7 +1346,7 @@ footer {
 
 #close {
   position: absolute;
-  top: 20px;
+  top: 25px;
   right: 20px;
   background-color: transparent;
   border: none;
@@ -1235,16 +1356,359 @@ footer {
   padding-left: 0;
 }
 
-.col-2 {
-  grid-template-columns: 1fr;
+.header-inner h1 {
+  font-size: 1.6rem;
+  padding-left: 20px;
+  margin: 0;
 }
 
-.header-inner h1 {
-  font-size: 1.6em;
+.nav-title {
+  padding-bottom: 20px;
 }
 
 #menu-sp img {
-  padding-right: 40px;
+  padding-right: 20px;
+  width: 90%;
+}
+
+#close img {
+  width: 90%;
+}
+
+.nav-sp-menu {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-sp-menu span {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  padding-left: 20px;
+}
+
+/* hamburger footer */
+
+.fotter-inner-nav {
+  padding-left: 40px;
+}
+
+.copy-nav {
+  color: #F0EEE9;
+  padding: 0 0 0 40px;
+  font-size: 16px;
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.footer-btn img {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+/*--------------- main visual ---------------*/
+.carousel img {
+  padding-top: 50px;
+}
+
+#concept {
+  margin: 60px auto;
+}
+
+.lead {
+  font-size: 19px;
+}
+
+/* menu */
+.menu-inner {
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu-column {
+  width: 80%;
+}
+
+/* about */
+
+#about {
+  margin-top: 80px;
+}
+
+/* NEWS&BLOG */
+.col-2 {
+  grid-template-columns: 1fr;
+  margin: 50px 20px;
+}
+
+#news-blog {
+  padding-bottom: 50px;
+}
+
+/* footer  */
+.shop-name {
+  font-size: 1.6rem;
+}
+
+footer {
+  padding: 30px;
+}
+
+/*--------------------------------------------- 
+-----------------menu.html用 ---------------
+---------------------------------------------*/
+
+/* menu table */
+.menu-title {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#menu-table {
+  margin: 0 10px;
+}
+
+.menu-list {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu-list li {
+  width: 45%;
+  padding: 10px;
+  padding-bottom: 60px;
+}
+
+.item-lead {
+  display: none;
+}
+
+.item-name {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.item-price {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.more-btn-menu {
+  bottom: 15px;
+}
+
+.menu-sp-show {
+  display: inline;
+}
+
+.menu-sp-none {
+  display: none;
+}
+
+/*--------------------------------------------- 
+-----------------menu_detail.html用 ---------------
+---------------------------------------------*/
+
+#menu-detail {
+  margin: 0 20px;
+}
+
+.page-title-main {
+  margin-bottom: 0;
+}
+
+.menu-detail-title {
+  margin: 0;
+}
+
+#menu-band-donut {
+  display: none;
+}
+
+#menu-band-drink {
+  display: none;
+}
+
+.menu-detail-inner {
+  padding: 40px 0;
+}
+
+.back-btn-sp {
+  padding: 40px 0;
+}
+
+/*--------------------------------------------- 
+-----------------about.html用 ---------------
+---------------------------------------------*/
+
+
+.greeting-inner {
+  margin: 20px;
+  padding: 0 0 40px 0;
+}
+
+.greeting-inner .description {
+  text-align: left;
+}
+
+#our-passion {
+  padding: 10px;
+}
+
+#greeting {
+  margin: 90px 0 0 0;
+}
+
+.passion-title {
+  font-size: 1.4rem;  
+}
+
+.passion-box {
+  padding: 0;
+  justify-content: center;
+}
+
+.customer-box {
+  margin: 10px;
+}
+
+.customer-img img {
+  display: none;
+}
+
+#customer-voices {
+  padding-bottom: 40px;
+}
+
+/*--------------------------------------------- 
+-----------------access.html用 ---------------
+---------------------------------------------*/
+
+.map {
+  width: 100%;
+  padding: 0 10px;
+}
+
+#shop-info h2 {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.info-details-box {
+  width: 100%;
+  margin: 50px auto;
+}
+
+/*--------------------------------------------- 
+-----------------contact.html用 ---------------
+---------------------------------------------*/
+
+.faq-box {
+  margin: 40px 10px;
+  padding: 15px;
+}
+
+.faq-inner h3 {
+  text-underline-offset: 3px;
+  margin: 0;
+}
+
+.form {
+  margin: 0 20px;
+}
+
+.sns-link {
+  margin-bottom: 50px;
+}
+
+.sns-link img {
+  width: 30%;
+}
+
+/*--------------------------------------------- 
+-----------------nwes&blog.html用 ---------------
+---------------------------------------------*/
+
+.whatsnew-nav {
+  padding: 0;
+}
+
+.whatsnew-box a {
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.pagination-box {
+  justify-content: space-evenly;
+  margin: 40px 0 0 0;
+}
+
+.pagination-symbol a {
+  padding: 0;
+}
+
+/*--------------------------------------------- 
+-----------------nwes&blog_detail.html用 ---------------
+---------------------------------------------*/
+
+.main-box {
+  display: block;
+  margin: 0 10px;
+}
+
+.main-img img {
+  width: 100%;
+}
+
+.subpage-main-n-b-detail {
+  padding-bottom: 0;
+}
+
+.n-b-detail-body h1 {
+  font-size: 30px;
+  margin: 30px 10px;
+}
+
+.n-b-detail-body h2 {
+  margin: 5px;
+}
+
+.n-b-detail-inner {
+  margin: 0 20px;
+}
+
+.n-b-detail-inner .lead {
+  font-size: 19px;
+}
+
+.n-b-detail-inner .description {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.content-bttm {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+.prev-next {
+  margin-top: 40px;
+}
+
+.share {
+  margin: 40px 0;
+}
+
+.share img {
+  width: 70%;
 }
 
 }
