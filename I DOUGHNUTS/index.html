@@ -34,12 +34,12 @@
           </ul>
          </nav>
 
-        <!-- SP navigation btn -->
+        <!-- hamburger  navigation btn -->
           <button id="menu-sp" onclick="document.getElementById('nav-sp').style.display = 'block'">
             <img src="images/menu-btn.png" alt="ハンバーガーメニュー開く">
           </button>
 
-        <!-- SP navigation -->
+        <!-- hamburger  navigation -->
           <div id="nav-sp">
             <button id="close" onclick="document.getElementById('nav-sp').style.display = 'none'">
               <img src="images/close-btn.png" alt="ハンバーガーメニュー閉じる">
@@ -47,30 +47,30 @@
 
             <nav>
               <ul>
-                <li>
+                <li class="nav-title">
                   <h1 class="shop-name">
                     <a href="index.html">I DOUGHNUTS</a>
                   </h1>
                 </li>
-                <li><a class="nav-sp-menu" href="menu.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MENU</a></li>
-                <li><a class="nav-sp-menu" href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT</a></li>
-                <li><a class="nav-sp-menu" href="access.html" onclick="document.getElementById('nav-sp').style.display = 'none'">ACCESS</a></li>
-                <li><a class="nav-sp-menu" href="contact.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT</a></li>
-                <li><a class="nav-sp-menu" href="nwes&blog.html" onclick="document.getElementById('nav-sp').style.display = 'none'">NEWS&BLOG</a></li>
+                <li><a class="nav-sp-menu" href="menu.html" onclick="document.getElementById('nav-sp').style.display = 'none'">MENU<span><img src="images/chevron.png" alt="シェブロン"></span></a></li>
+                <li><a class="nav-sp-menu" href="about.html" onclick="document.getElementById('nav-sp').style.display = 'none'">ABOUT<span><img src="images/chevron.png" alt="シェブロン"></a></li>
+                <li><a class="nav-sp-menu" href="access.html" onclick="document.getElementById('nav-sp').style.display = 'none'">ACCESS<span><img src="images/chevron.png" alt="シェブロン"></a></li>
+                <li><a class="nav-sp-menu" href="contact.html" onclick="document.getElementById('nav-sp').style.display = 'none'">CONTACT<span><img src="images/chevron.png" alt="シェブロン"></a></li>
+                <li><a class="nav-sp-menu" href="nwes&blog.html" onclick="document.getElementById('nav-sp').style.display = 'none'">NEWS&BLOG<span><img src="images/chevron.png" alt="シェブロン"></a></li>
               </ul>
             </nav>
-            <div class="fotter-inner">
+            <div class="fotter-inner-nav">
               <div class="fotter-addr">
                 <p class="description">
-                  <a href="#">
-                    <span>〒XXX-XXXX<br>岡山県岡山市岡山X-X</span>
+                  <a class="footer-btn" href="">
+                    <span>〒706-0028<br>岡山県玉野市児島唐琴町４丁目</span>
                     <span><img src="images/map.png" alt="mapのicon"></span>
                   </a>
                 </p>
               </div>
               <div class="footer-tel">
                 <p class="description">
-                  <a href="">
+                  <a class="footer-btn" href="">
                     <span>TEL XXX-XXXX-XXXX</span>
                     <span><img src="images/tel.png" alt="phoneのicon"></span>
                   </a>
@@ -78,7 +78,7 @@
               </div>
               <div class="footer-mail">
                 <p class="description">
-                  <a href="">
+                  <a class="footer-btn" href="">
                     <span>お問い合わせはコチラ</span>
                     <span><img src="images/mail.png" alt="mailのicon"></span>
                   </a>
@@ -90,7 +90,7 @@
               </div>
             </div>
 
-            <p class="copy">&copy; I DOUGHNUTS.</p>
+            <p class="copy-nav">&copy; I DOUGHNUTS.</p>
 
           </div>
       </div>
@@ -156,13 +156,16 @@
         <!-- about -->
          <section id="about">
           <div>
-            <img src="images/about.png" class="about-img" alt="about-img">
+            <img src="images/about.png" class="img-pc" alt="about-img">
           </div>
            <div class="about-inner">
              <h2 class="title">ABOUT</h2>
               <p class="lead">Welcome to I DOUGHNUTS<br>
-                ドーナツがもたらす、最高の至福のひとときを。</p>
-              <p class="description">こんにちは。「I Donuts」へようこそ！ 私たちのカフェでは、素材にこだわった手作りのドーナツと、ドーナツ発祥の地で愛され続けるクラシックな味わいを大切にしています。
+                ドーナツがもたらす、至福のひとときを。</p>
+                <div>
+                  <img src="images/about.png" class="img-sp" alt="about-img">
+                </div>
+              <p class="description">こんにちは。「I Donuts」へようこそ！<br>私たちのカフェでは、素材にこだわった手作りのドーナツと、ドーナツ発祥の地で愛され続けるクラシックな味わいを大切にしています。
                 一口食べると、素材の良さが伝わり、どこか懐かしく、心温まるひとときをお届けします。
                 私たちのこだわりが詰まったドーナツの背景や、作り手の思いをもっと知っていただければ嬉しいです。
                 ぜひ、「I DOUGHNUTS」のストーリーをご覧ください。</p>
@@ -221,7 +224,7 @@
           <div class="fotter-addr">
             <p class="description">
               <a href="#">
-                <span>〒XXX-XXXX<br>岡山県岡山市岡山X-X</span>
+                <span>〒706-0028<br>岡山県玉野市児島唐琴町４丁目</span>
                 <span><img src="images/map.png" alt="mapのicon"></span>
               </a>
             </p>
