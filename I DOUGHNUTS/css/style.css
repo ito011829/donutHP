@@ -1258,7 +1258,110 @@ footer {
   top: 10rem;
 }
 
+.img-sp {
+  display: block;
+  width: 100%;
+  box-shadow:5px 5px 10px #b2b2b2;
 }
+
+.img-pc {
+  display: none;
+}
+
+
+.passion-box {
+  justify-content: center;
+}
+
+.customer-img img {
+  display: none;
+}
+
+.customer-box {
+  margin: 20px 100px;
+}
+
+.faq-box {
+  margin: 20px 100px;
+  padding: 20px 60px;
+}
+
+.form {
+  margin: 0 200px;
+}
+
+.whatsnew-box a {
+  margin: 20px 100px;
+}
+
+.n-b-detail-body h1 {
+  font-size: 40px;
+}
+
+}
+
+/*--------------- 1180px以下 ---------------*/
+@media screen and (max-width: 1180px) {
+
+  .n-b-detail-body h1 {
+    font-size: 30px;
+  }
+
+  .n-b-detail-inner {
+    margin: 100px;
+  }
+
+}
+
+/*--------------- 1100px以下 ---------------*/
+@media screen and (max-width: 1100px) {
+
+.whatsnew-box a {
+  flex-wrap: wrap;
+  margin: 20px 50px;
+
+}
+
+.whatsnew-nav {
+  padding: 0;
+}
+
+.pagination-box {
+  margin: 100px 100px 0 100px;
+}
+
+.main-box {
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.n-b-detail-body h1 {
+  font-size: 40px;
+}
+
+.content-bttm {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+.prev-next {
+  margin-top: 40px;
+}
+
+.share {
+  margin: 40px 0;
+  justify-content: center;
+}
+
+.share img {
+  width: 70%;
+}
+
+}
+
+
 
 /*--------------------------------------------- 
 -----------------スマホ用---------------
@@ -1321,7 +1424,6 @@ footer {
   margin: 0 auto;
   padding-top: 20px;
 }
-
 
 
 /* ---------------hamburger --------------- */
